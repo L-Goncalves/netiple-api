@@ -1,6 +1,6 @@
 import  express, {Application, Request, Response, NextFunction} from 'express';
 import bodyParser from 'body-parser';
-import auth from './routes/auth'
+import auth from './src/routes/auth'
 const app: Application = express()
 const port = 3000
 
