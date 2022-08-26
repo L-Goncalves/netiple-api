@@ -22,3 +22,15 @@ export async function insertUser(data: any){
             }
         }
 }
+
+
+export async function login(data: any){
+
+    const {username, password} = data;
+
+    const user = await db("users").where({username, password});
+
+
+    return user;
+
+}

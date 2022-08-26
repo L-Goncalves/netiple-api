@@ -14,11 +14,11 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 
-app.use('/signup', auth)
+app.use('/', auth)
 
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Listening on port ${port}`)
 })
 
